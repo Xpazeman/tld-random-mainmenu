@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using System;
-using Harmony;
+using HarmonyLib;
 using UnityEngine;
 using MelonLoader;
 
@@ -14,8 +14,8 @@ namespace RandomMainMenu
         }
     }
 
-    [HarmonyPatch(typeof(Panel_MainMenu), "Start")]
-    internal class Panel_MainMenu_Start
+    [HarmonyPatch(typeof(Panel_MainMenu), "Initialize")]
+    internal class Panel_MainMenu_Initialize
     {
         public static void Postfix(Panel_MainMenu __instance)
         {
