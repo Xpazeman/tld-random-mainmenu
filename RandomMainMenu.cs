@@ -3,14 +3,15 @@ using System;
 using HarmonyLib;
 using UnityEngine;
 using MelonLoader;
+using Il2Cpp;
 
 namespace RandomMainMenu
 {
     internal class RandomMainMenu : MelonMod
     {
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
-            Debug.Log("[random-main-menu] Version " + Assembly.GetExecutingAssembly().GetName().Version);
+            
         }
     }
 
